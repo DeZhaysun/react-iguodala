@@ -1,14 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import Header from "./components/header";
+import Description from "./components/description";
+import Clutch from "./components/clutch";
+import Quote from "./components/quote";
+import Stats from "./components/stats";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div>
+    <Header />
+    <Description />
+    <Clutch />
+    <Quote />
+    <Stats />
+    <footer>&copy; 2022 Jason Tang</footer>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function

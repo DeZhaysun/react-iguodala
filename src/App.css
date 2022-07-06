@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.yellow {
+  color: #ffc72c;
+}
+
+.blue {
+  color: #006bb6;
+}
+
+/*Header Elements*/
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 2vh 20vh;
+  background-color: #181818;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.headerLinks {
+  display: flex;
+  gap: 5vh;
+}
+
+.headerTitle {
+  color: white;
+  font-size: 1.5em;
+}
+
+.headerTitle:hover {
+  color: #006bb6;
+}
+
+.links {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.links:hover {
+  color: #ffc72c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+
+.logoImage {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 15px;
+}
+
+#git:hover {
+  color: #006bb6;
+}
+
+/*Section 1*/
+
+.topBanner {
+  background-color: #26282a;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20vh;
+  padding-top: 8vh;
+  gap: 7vh;
+}
+
+#mainImage {
+  height: 50vh;
+  width: auto;
+}
+
+.name {
+  font-size: 9vh;
+  font-weight: bold;
+  max-width: 80vh;
+}
+
+.content {
+  max-width: 80vh;
+  font-size: 2.5vh;
+  font-weight: 100;
+}
+
+/*Section 2*/
+
+#clutch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: auto 20vh;
+  height: 80vh;
+}
+
+.clutchTitle {
+  font-size: 8vh;
+  font-weight: bold;
+  color: #1d428a;
+  position: absolute;
+  top: 88vh;
+  z-index: 0;
+}
+
+.playImage {
+  height: 24vh;
+  width: 36vh;
+  border-style: solid;
+  border-color: #ffc72c;
+  border-width: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.6s;
+}
+
+.playImage:hover {
+  height: 26vh;
+  width: 39vh;
+}
+
+.plays {
+  padding: 10vh;
+  display: flex;
+  gap: 5vh;
+}
+
+.game {
+  text-align: center;
+  color: #1d428a;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/*Section 3*/
+
+.quote {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5vh 40vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+}
+
+.openShot {
+  color: white;
+  font-style: italic;
+  font-size: 2.2em;
+  font-weight: 200;
+}
+
+.max {
+  text-align: right;
+  color: lightgray;
+  align-self: flex-end;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Section 4 */
+
+.signUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.container {
+  background-color: #1d428a;
+  color: white;
+  height: 25vh;
+  width: 45vw;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+  border: 5px solid #ffc72c;
+  font-size: 3vh;
+  padding: 3vw;
+  box-sizing: border-box;
+}
+
+button {
+  width: 8vw;
+  height: 4vw;
+  border-radius: 6px;
+  background-color: #1d428a;
+  border-color: #ffc72c;
+  border-width: 2px;
+  border-style: solid;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+button:hover {
+  color: #1d428a;
+  background-color: #ffc72c;
+  border-color: #1d428a;
+}
+
+.weak {
+  font-weight: 100;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+  color: white;
+  padding: 1vh;
 }
