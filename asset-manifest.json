@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-iguodala/static/css/main.4e507c42.css",
-    "main.js": "/react-iguodala/static/js/main.1625bb86.js",
+    "main.js": "/react-iguodala/static/js/main.f9bb6287.js",
     "static/js/787.6957e4a3.chunk.js": "/react-iguodala/static/js/787.6957e4a3.chunk.js",
     "static/media/hawks.png": "/react-iguodala/static/media/hawks.3f3d3ae1d9dd04ce4b57.png",
     "static/media/raptors.jpg": "/react-iguodala/static/media/raptors.468ed5a74479e0d27140.jpg",
@@ -12,11 +12,11 @@
     "static/media/logo.PNG": "/react-iguodala/static/media/logo.ee33c872ca3366990f84.PNG",
     "index.html": "/react-iguodala/index.html",
     "main.4e507c42.css.map": "/react-iguodala/static/css/main.4e507c42.css.map",
-    "main.1625bb86.js.map": "/react-iguodala/static/js/main.1625bb86.js.map",
+    "main.f9bb6287.js.map": "/react-iguodala/static/js/main.f9bb6287.js.map",
     "787.6957e4a3.chunk.js.map": "/react-iguodala/static/js/787.6957e4a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e507c42.css",
-    "static/js/main.1625bb86.js"
+    "static/js/main.f9bb6287.js"
   ]
 }
