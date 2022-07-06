@@ -22,7 +22,7 @@ class Header extends Component {
           <a
             className="links"
             id="git"
-            href="https://github.com/DeZhaysun/iguodala"
+            href="https://github.com/DeZhaysun/react-iguodala"
             target="_blank"
           >
             GitHub
